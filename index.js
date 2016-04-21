@@ -26,14 +26,11 @@ var BlockExplorer = function (blockexplorer_path) {
   ]
   self.blockexplorer_path = blockexplorer_path
   self.socket = io(blockexplorer_path + '/events')
-  self.socket.on('connect', function () {
-    self.channels.forEach(function (channel) {
-      self.socket.on(channel, function (data) {
-        if (channel === 'newblock') {
-          console.log('newblock')
-        }
-        self.emit(channel, data)
-      })
+  self.channels.forEach(function (channel) {
+    self.socket.on(channel, function (data) {
+      self.emit(channel, data)
+    })
+    self.socket.on('connect', function () {
       self.socket.emit('join', channel)
     })
     self.socket.on('transaction', function (data) {
