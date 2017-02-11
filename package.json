@@ -1,7 +1,7 @@
 {
   "name": "blockexplorer-rpc",
   "version": "0.0.4",
-  "description": "",
+  "description": "Colored-Coins Block-Explorer REST API wrapper in Node.js",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec",
@@ -9,11 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Colu-platform/blockexplorer-rpc.git"
+    "url": "https://github.com/Colored-Coins/blockexplorer-rpc.git"
   },
   "keywords": [
-    "colu",
-    "engine",
     "colored",
     "coins",
     "bitcoin"
@@ -21,11 +19,15 @@
   "contributors": [
     {
       "name": "Tal Beja",
-      "email": "tal@colu.co"
+      "email": "tal@colu.com"
+    },
+    {
+      "name": "Oded Leiba",
+      "email": "oleiba@colu.com"
     }
   ],
-  "license": "https://www.colu.co/TOS",
-  "homepage": "https://colu.co",
+  "license": "MIT",
+  "homepage": "https://github.com/Colored-Coins/blockexplorer-rpc",
   "dependencies": {
     "qs": "^5.0.0",
     "request": "^2.61.0",
