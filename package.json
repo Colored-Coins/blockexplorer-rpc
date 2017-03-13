@@ -1,6 +1,6 @@
 {
   "name": "blockexplorer-rpc",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Colored-Coins Block-Explorer REST API wrapper in Node.js",
   "main": "index.js",
   "scripts": {
